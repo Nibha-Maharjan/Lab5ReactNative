@@ -14,14 +14,14 @@ export default function App() {
       ]}
     >
       <View style={styles.row1}>
-        <View style={styles.buttonFirst}>
+        <View style={[styles.buttonFirst, styles.spaceAroundButton]}>
           <Button
             title="ColorUno"
             color="#ffffff"
             onPress={() => setColorOne('#008598')}
           />
         </View>
-        <View style={styles.buttonSecond}>
+        <View style={[styles.buttonSecond, styles.spaceAroundButton]}>
           <Button
             title="ColorDos"
             color="#ffffff"
@@ -37,7 +37,7 @@ export default function App() {
             onPress={() => setColorOne('#841592')}
           />
         </View>
-        <View style={styles.buttonFourth}>
+        <View style={[styles.buttonFourth, styles.spaceBetweenButton]}>
           <Button
             title="ColorQuatro"
             color="#ffffff"
@@ -94,5 +94,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ef7c13',
     borderWidth: 1,
     borderColor: 'black',
+  },
+  spaceBetweenButton: {
+    marginLeft: 10,
+  },
+  spaceAroundButton: {
+    marginHorizontal: 10,
   },
 });
