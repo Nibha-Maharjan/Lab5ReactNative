@@ -16,15 +16,15 @@ export default function App() {
       <View style={styles.row1}>
         <View style={[styles.buttonFirst, styles.spaceAroundButton]}>
           <Button
-            title="ColorUno"
+            title="#008598"
             color="#ffffff"
             onPress={() => setColorOne('#008598')}
           />
         </View>
         <View style={[styles.buttonSecond, styles.spaceAroundButton]}>
           <Button
-            title="ColorDos"
-            color="#ffffff"
+            title="#fedS20"
+            color="#008598"
             onPress={() => setColorOne('#fed520')}
           />
         </View>
@@ -32,14 +32,14 @@ export default function App() {
       <View style={styles.row2}>
         <View style={styles.buttonThird}>
           <Button
-            title="ColorTres"
+            title="#841592"
             color="#ffffff"
             onPress={() => setColorOne('#841592')}
           />
         </View>
         <View style={[styles.buttonFourth, styles.spaceBetweenButton]}>
           <Button
-            title="ColorQuatro"
+            title="#ef7c13"
             color="#ffffff"
             onPress={() => setColorOne('#ef7c13')}
           />
